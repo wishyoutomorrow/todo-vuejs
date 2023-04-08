@@ -8,5 +8,5 @@ export default {
     TOGGLE_GROUP(state,id){
         let group = state.groups.find(item => item.id === id)
         group.isActive = !group.isActive;
-    }
+    },
 }

@@ -6,5 +6,7 @@ export default {
     TOGGLE_GROUP({commit}, id) {
         commit("DEACTIVATE_GROUPS")
         commit("TOGGLE_GROUP", id)
-    }
+    },
+
+
 }
