@@ -12,7 +12,10 @@ export default {
             id: null,
         };
     },
-    TOGGLE_CHECK_TASK(state, task) {
-        state.task.isChecked = !state.task.isChecked;
+    TOGGLE_CHECK_TASK(state, {task, value}) {
+        task.isChecked = value;
+    },
+    TOGGLE_IMPORTANT_TASK(state, {task, value}) {
+        task.isImportant = value;
     }
 }
