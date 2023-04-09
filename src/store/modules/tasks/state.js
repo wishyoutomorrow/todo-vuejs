@@ -1,3 +1,9 @@
 export default {
-    tasks: []
+    task: {
+        name: "",
+        isChecked: false,
+        isImportant: false,
+        due: false,
+        id: null,
+    }
 }

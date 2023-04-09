@@ -3,10 +3,12 @@ export default {
         commit("DEACTIVATE_GROUPS");
         commit("ADD_GROUP", group);
     },
-    TOGGLE_GROUP({commit}, id) {
+    ACTIVE_GROUP({commit}, id) {
         commit("DEACTIVATE_GROUPS")
-        commit("TOGGLE_GROUP", id)
+        commit("ACTIVE_GROUP", id)
     },
-
+    ADD_TASK_TO_ACTIVE_GROUP({commit}, task) {
+        commit("ADD_TASK_TO_ACTIVE_GROUP", task);
+    }
 
 }

@@ -1,3 +1,3 @@
 export default {
-    getTasks: state => state.tasks
+    getTask: state => state.task
 }

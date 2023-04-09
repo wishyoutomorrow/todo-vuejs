@@ -1,8 +1,11 @@
 export default {
-    ADD_TASK({commit}, task){
-        commit("ADD_TASK", task)
+    CREATE_TASK({commit}, task){
+        commit("CREATE_TASK", task)
     },
-    CLEAR_TASKS({commit}){
-        commit("CLEAR_TASKS");
+    CLEAR_TASK({commit}) {
+        commit("CLEAR_TASK");
+    },
+    TOGGLE_CHECK_TASK({commit}) {
+        commit("TOGGLE_CHECK_TASK")
     }
 }
