@@ -1,0 +1,18 @@
+$path: "@/assets/fonts/";
+@import "icomoon";
+
+@font-face {
+  font-family: "Segoe";
+  font-display: swap;
+  src: url($path + "Segoe-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Segoe";
+  font-display: swap;
+  src: url($path + "Segoe.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}

@@ -1,0 +1,38 @@
+@import "fonts";
+@import "normalize.css";
+@import "functions";
+@import "mixins";
+@import "grid";
+
+//^ =============================== Global style & blocks ===============================
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: $root-font-size;
+}
+
+#app {
+  font-family: $main-font;
+  font-size: $font-size;
+  font-weight: $main-weight;
+  color: $gray;
+  background-color: #f3f2f1;
+  & > div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+ul {
+  padding: 0;
+}
+button,
+input {
+  border: none;
+  outline: none;
+  background: none;
+}
+.app-wrapper {
+  height: 100%;
+}
